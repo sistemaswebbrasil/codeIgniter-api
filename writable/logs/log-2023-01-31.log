@@ -1,0 +1,61 @@
+CRITICAL - 2023-01-31 10:53:50 --> key must be a string when using hmac
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 232.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(202): Firebase\JWT\JWT::sign()
+ 2 APPPATH/Controllers/Login.php(46): Firebase\JWT\JWT::encode()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-31 10:53:58 --> key must be a string when using hmac
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 232.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(202): Firebase\JWT\JWT::sign()
+ 2 APPPATH/Controllers/Login.php(46): Firebase\JWT\JWT::encode()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-31 10:55:06 --> key must be a string when using hmac
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 232.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(202): Firebase\JWT\JWT::sign()
+ 2 APPPATH/Controllers/Login.php(46): Firebase\JWT\JWT::encode()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-31 10:55:34 --> key must be a string when using hmac
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 232.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(202): Firebase\JWT\JWT::sign()
+ 2 APPPATH/Controllers/Login.php(46): Firebase\JWT\JWT::encode()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-31 10:55:35 --> key must be a string when using hmac
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 232.
+ 1 VENDORPATH/firebase/php-jwt/src/JWT.php(202): Firebase\JWT\JWT::sign()
+ 2 APPPATH/Controllers/Login.php(46): Firebase\JWT\JWT::encode()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-31 11:03:49 --> Wrong number of segments
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 102.
+ 1 APPPATH/Filters/AuthFilter.php(52): Firebase\JWT\JWT::decode()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\AuthFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-31 11:03:53 --> Wrong number of segments
+in VENDORPATH/firebase/php-jwt/src/JWT.php on line 102.
+ 1 APPPATH/Filters/AuthFilter.php(52): Firebase\JWT\JWT::decode()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\AuthFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')

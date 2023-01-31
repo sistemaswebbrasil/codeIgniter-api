@@ -1,0 +1,6 @@
+tools
+.env
+.env.development.local
+.env.local
+.env.production.local
+.php-cs-fixer.cache

@@ -47,3 +47,11 @@ $routes->get('/', 'Home::index');
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+$routes->presenter('client');
+
+$routes->group("api", function ($routes) {
+    $routes->post("register", "Register::index");
+    $routes->post("login", "Login::index");
+    $routes->get("users", "User::index", ['filter' => 'authFilter']);
+});
