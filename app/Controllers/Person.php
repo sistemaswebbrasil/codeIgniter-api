@@ -14,7 +14,7 @@ class Person extends ResourceController
     public function index()
     {
         $model = new PersonModel();
-        $data['persons'] = $model->orderBy('id', 'DESC')->findAll();
+        $data = $model->orderBy('id', 'DESC')->findAll();
         return $this->respond($data);
     }
 

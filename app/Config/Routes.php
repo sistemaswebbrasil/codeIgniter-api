@@ -48,13 +48,11 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 
-$routes->presenter('client');
-
 $routes->group("api", function ($routes) {
     $routes->post("register", "Register::index");
     $routes->post("login", "Login::index");
 
-    $routes->group('users', ['filter' => 'authFilter'], function($routes) {
+    $routes->group('users', ['filter' => 'authFilter'], function ($routes) {
         $routes->get("/", "User::index");
         $routes->get("(:any)", "User::show/$1");
         $routes->post("/", "User::create");
@@ -62,12 +60,12 @@ $routes->group("api", function ($routes) {
         $routes->delete("(:any)", "User::delete/$1");
     });
 
-    $routes->group('persons', ['filter' => 'authFilter'], function($routes) {
+    $routes->group('persons', ['filter' => 'authFilter'], function ($routes) {
         $routes->get("/", "Person::index");
         $routes->get("(:any)", "Person::show/$1");
         $routes->post("/", "Person::create");
         $routes->put("(:any)", "Person::update/$1");
         $routes->delete("(:any)", "Person::delete/$1");
-    });        
-    
+    });
+
 });
