@@ -53,5 +53,22 @@ $routes->presenter('client');
 $routes->group("api", function ($routes) {
     $routes->post("register", "Register::index");
     $routes->post("login", "Login::index");
-    $routes->get("users", "User::index", ['filter' => 'authFilter']);
+
+    $routes->group('users', ['filter' => 'authFilter'], function($routes) {
+        $routes->get("/", "User::index");
+        $routes->get("(:any)", "User::show/$1");
+        $routes->post("/", "User::create");
+        $routes->put("(:any)", "User::update/$1");
+        $routes->delete("(:any)", "User::delete/$1");
+    });    
+    
 });
+
+
+// $routes->group('users', ['filter' => 'authFilter'], function($routes) {
+//     $routes->get("/", "User::index");
+//     $routes->get("(:any)", "User::show/$1");
+//     $routes->post("/", "User::create");
+//     $routes->put("(:any)", "User::update/$1");
+//     $routes->delete("(:any)", "User::delete/$1");
+// });
